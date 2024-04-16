@@ -1,4 +1,6 @@
-﻿# Regressão, Redes Neurais, Huber Loss e Ativação Mish
+<script> MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } }; </script> <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script> <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"> </script>
+ 
+# Regressão, Redes Neurais, Huber Loss e Ativação Mish
 
 ## Introdução
 
@@ -39,7 +41,9 @@ Se você acha que essa reta vermelha é a melhor para essa problema, você está
 
 A reta vermelha é a reta que minimiza o **erro quadrático médio (MSE)** entre a reta e os pontos. Mais especificamente, pense da seguinte forma. Para cada ponto (valor da casa e sua metragem), calculamos sua distância para a reta (isso gera um valor _x_, o erro) e elevamos esse valor ao quadrado. Depois de fazer isso para todos os pontos, tiramos a média.  Com isso, sabemos o quâo bom nosso modelo se ajustou aos dados (quanto menor o erro, melhor). O **MSE** é calculado da seguinte forma:
 
-$$MSE = \frac{1}{n}\sum_{i=1}^n(Y_i-\hat{Y_i})^2$$Onde:
+$$MSE = \frac{1}{n}\sum_{i=1}^n(Y_i-\hat{Y_i})^2$$
+
+Onde:
 
 - $Y_i$ é o valor da casa
 - $\hat{Y_i}$ é o valor previsto da casa
@@ -262,6 +266,7 @@ A simplicidade e eficiência da ReLU a tornaram a escolha padrão para muitas ar
 ## Função de Ativação Mish
 
 A função de ativação Mish é uma das funções de ativação mais recentes e tem ganhado popularidade devido ao seu desempenho em várias tarefas de aprendizado profundo. A função Mish é definida como:
+
 $$ \text{Mish}(x) = x \cdot \tanh(\text{softplus}(x)) = x \cdot \tanh(\ln(1 + e^x)) $$
 
 ### Características da Função Mish
